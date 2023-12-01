@@ -10,52 +10,73 @@
   },
 
   {
-    "question": "What is the primary programming language used for Flutter development?",
+    "question": "What does a Flutter widget represent?",
     "answers": [
-      "Dart",
-      "Java",
-      "Kotlin",
-      "Swift"
+      "Basic building block of the user interface",
+      "A function that performs background tasks",
+      "An external package in Flutter",
+      "A configuration file for app settings"
     ]
   },
 
   {
-    "question": "What is the primary programming language used for Flutter development?",
+    "question": "When is setState() used in Flutter?",
     "answers": [
-      "Dart",
-      "Java",
-      "Kotlin",
-      "Swift"
+      "To signal a change in the state of a StatefulWidget",
+      "To initialize the state of a widget",
+      "When defining the app's overall theme",
+      "Only for handling user input"
+      
     ]
   },
 
   {
-    "question": "What is the primary programming language used for Flutter development?",
+    "question": " What is the primary purpose of pubspec.yaml in Flutter?",
     "answers": [
-      "Dart",
-      "Java",
-      "Kotlin",
-      "Swift"
+      "Define metadata and dependencies",
+      "Specify screen layouts",
+      "Create animations",      
+      "Handle user authentication"
     ]
   },
 
   {
-    "question": "What is the primary programming language used for Flutter development?",
+    "question": "What is Flutter's hot reload feature used for?",
     "answers": [
-      "Dart",
-      "Java",
-      "Kotlin",
-      "Swift"
+      "Instantly see code changes without restarting the app",
+      "Compiling the entire codebase",
+      "Running tests",
+      "Deploying the app to production"
     ]
   },
 
   {
-    "question": "What is the primary programming language used for Flutter development?",
+    "question": "What does the main() function serve as in a Flutter app?",
     "answers": [
-      "Dart",
-      "Java",
-      "Kotlin",
-      "Swift"
+      "Entry point for the application",
+      " Placeholder for widget definitions",
+      " Only required for web applications",      
+      " Used for handling HTTP requests"
+    ]
+  },
+
+  {
+    "question": "What does BuildContext represent in Flutter?",
+    "answers": [
+      " Location of a widget within the widget tree",
+      " A package for building UI components",
+      "An external library for state management",
+      "A directory path for assets"
+    ]
+  },
+
+  {
+    "question": "What is a Flutter package?",
+    "answers": [
+      " Collection of Dart code and assets",
+      "A predefined app template",      
+      " A debugging tool",
+      "An animation effect"
     ]
   }
 ]
