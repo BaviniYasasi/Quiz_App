@@ -51,26 +51,6 @@
   },
 
   {
-    "question": "What does the main() function serve as in a Flutter app?",
-    "answers": [
-      "Entry point for the application",
-      " Placeholder for widget definitions",
-      " Only required for web applications",      
-      " Used for handling HTTP requests"
-    ]
-  },
-
-  {
-    "question": "What does BuildContext represent in Flutter?",
-    "answers": [
-      " Location of a widget within the widget tree",
-      " A package for building UI components",
-      "An external library for state management",
-      "A directory path for assets"
-    ]
-  },
-
-  {
     "question": "What is a Flutter package?",
     "answers": [
       " Collection of Dart code and assets",
