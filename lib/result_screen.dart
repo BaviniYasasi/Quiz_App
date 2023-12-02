@@ -32,51 +32,61 @@ class ResultScreen extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
+            const SizedBox(height: 30),
             const Text(
-              'Result Screen',
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.black, fontSize: 28, fontWeight: FontWeight.w900),
+              'Your Quiz Result',
+              style: TextStyle(color: Colors.deepPurple, fontSize: 32, fontWeight: FontWeight.bold),
             ),
-            const Padding(padding: EdgeInsets.all(18)),
+            const SizedBox(height: 20),
+            Image.asset(
+              'assets/images/result_image.jpg',
+              width: 200,
+              height: 200,
+            ),
+            const SizedBox(height: 20),
             ListView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
               itemCount: summary.length,
-              itemBuilder: (context,index){
+              itemBuilder: (context, index) {
                 var s = summary[index];
-                return Column(
-                  children: [
-                    Text(
-                      'Question ${(s['questionIndex'] as int) + 1}: ${s['question']}',
-                      style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      'Correct Answer: ${s['correct_answer']}',
-                      style: const TextStyle(fontSize: 16, color: Color.fromARGB(255, 74, 242, 80),backgroundColor: Colors.black),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      'Your Answer: ${s['user_answer']}',
-                      style: const TextStyle(fontSize: 16, color: Color.fromARGB(255, 78, 77, 77),backgroundColor: Colors.white),
-                    ),
-                    const SizedBox(height: 8),
-                    const Divider(
-                      color: Colors.grey,
-                      thickness: 2.0,
-                      height: 16.0,
-                    ),
-                  ],
+                return Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 10.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        '  Question ${(s['questionIndex'] as int) + 1}: ${s['question']}',
+                        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500,color: Colors.white),
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        '  Correct Answer: ${s['correct_answer']}',
+                        style: const TextStyle(fontSize: 16, color: Colors.green,fontWeight: FontWeight.w600),
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        '  Your Answer: ${s['user_answer']}',
+                        style: const TextStyle(fontSize: 16, color: Colors.red,fontWeight: FontWeight.w600),
+                      ),
+                      const SizedBox(height: 8),
+                      const Divider(
+                        color: Colors.white54,
+                        thickness: 2.0,
+                        height: 16.0,
+                      ),
+                    ],
+                  ),
                 );
               },
             ),
-            OutlinedButton(
+            const SizedBox(height: 20),
+            ElevatedButton(
               onPressed: () {
                 onAction('start');
               },
-              style: OutlinedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 93, 0, 110),
-                side: const BorderSide(color: Color.fromARGB(255, 93, 0, 110)),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.deepPurple,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),
@@ -84,17 +94,15 @@ class ResultScreen extends StatelessWidget {
               child: const Padding(
                 padding: EdgeInsets.symmetric(vertical: 12.0),
                 child: Text(
-                  'Restart',
-                  textAlign: TextAlign.center,
+                  'Restart Quiz',
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
               ),
-            )
+            ),
+            const SizedBox(height: 30),
           ],
         ),
       ),
     );
   }
 }
-
-            

@@ -36,7 +36,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
             Text(
               questions[currentQuestionIndex].question,
               textAlign: TextAlign.center,
-              style: const TextStyle(color: Colors.black, fontSize: 28),
+              style: const TextStyle(color: Colors.white, fontSize: 28),
             ),
             const Padding(padding: EdgeInsets.all(15)),
             ...questions[currentQuestionIndex]
