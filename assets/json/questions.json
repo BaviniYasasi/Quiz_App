@@ -51,12 +51,62 @@
   },
 
   {
+    "question": "What does the main() function serve as in a Flutter app?",
+    "answers": [
+      "Entry point for the application",
+      " Placeholder for widget definitions",
+      " Only required for web applications",      
+      " Used for handling HTTP requests"
+    ]
+  },
+
+  {
+    "question": "What does BuildContext represent in Flutter?",
+    "answers": [
+      " Location of a widget within the widget tree",
+      " A package for building UI components",
+      "An external library for state management",
+      "A directory path for assets"
+    ]
+  },
+
+  {
     "question": "What is a Flutter package?",
     "answers": [
       " Collection of Dart code and assets",
       "A predefined app template",      
       " A debugging tool",
       "An animation effect"
+    ]
+  },
+
+  {
+    "question": "Where is the main() function typically called in Flutter?",
+    "answers": [
+      "At the start of the app to initialize the widget tree",
+      "Only within asynchronous functions",      
+      "Inside the build() method",
+      "In the middle of the app lifecycle"
+    ]
+  },
+
+  {
+    "question": "What does the flutter doctor command check for?",
+    "answers": [
+      "Diagnose issues and dependencies in the development environment",
+      " Debug application-specific errors",      
+      " Automatically fix code issues",
+      "Run tests for app functionality"
+    ]
+  },
+
+  {
+    "question": "What is the primary use of a StatelessWidget in Flutter?",
+    "answers": [
+      "Represent immutable UI elements",
+      "Manage and update mutable state",      
+      "Handle user interactions",
+      "Define the app's overall layout"
     ]
   }
 ]
